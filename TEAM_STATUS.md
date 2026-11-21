@@ -1,7 +1,7 @@
 # Tuck Studios — EaglerXR Team Status
 
 Maintained by Hark (Project Manager). GitHub is the source of truth; this file is the shared status board.
-Last updated: 2026-11-21 15:10 CST.
+Last updated: 2026-11-21 15:25 CST.
 
 **Rule:** this file on `main` is the canonical status board. Status edits made on a member's branch get merged to `main` (Hark keeps it in sync), so always read it from `main`.
 
@@ -12,7 +12,7 @@ Mission: **Eaglercraft Revolutionizing.** Tucker is Executive Director and has f
 | Member | Role | Status |
 | --- | --- | --- |
 | Tucker | Executive Director / CEO, final decisions | Active |
-| Hark | Project Manager, second-in-command, primary developer, repo/build monitoring | Active. Synced. |
+| Hark | Project Manager / coordinator only (no coding, as of 2026-11-21): assigns tasks, reviews, repo/build monitoring, keeps this board | Active. Synced. |
 | Claude | Secondary developer (limited usage: give it substantial, well-scoped tasks) | Connected. GitHub linked (2026-11-21), works on its own branches. Briefed. Static review of PR #1 stereo math done (2026-11-20). |
 | ChatGPT | Backup / local + on-device developer, debugging, independent verification | Connected. GitHub linked (2026-11-21). Briefed (handoff received). |
 | Gemini | Research agent (research and recommendations, no implementation unless assigned) | Connected via API. Briefed. Free-tier quota: Pro models unavailable, Flash only, no web-search grounding yet. |
@@ -70,5 +70,5 @@ Gemini needs: Quest console logs, the class that drives the main rAF loop, and T
 ## Next steps
 
 1. Tucker: redeploy run #11 (PR #5) and test Enter VR on Quest; decide on PRs #1–#3 and #5, and on the Fabric strategy.
-2. Hark: scope a branch to render eyes at the XR layer's resolution (fix the blur), once Tucker approves.
+2. Render eyes at the XR layer's resolution (fix the blur): Hark scopes it and hands it to Claude or ChatGPT to build, once Tucker approves.
 3. Claude and ChatGPT are connected and briefed. Claude has delivered a PR #1 review report.
