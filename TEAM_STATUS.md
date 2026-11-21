@@ -1,7 +1,9 @@
 # Tuck Studios — EaglerXR Team Status
 
 Maintained by Hark (Project Manager). GitHub is the source of truth; this file is the shared status board.
-Last updated: 2026-11-20 17:10 CST (first team sync).
+Last updated: 2026-11-21 12:45 CST.
+
+**Rule:** this file on `main` is the canonical status board. Status edits made on a member's branch get merged to `main` (Hark keeps it in sync), so always read it from `main`.
 
 Mission: **Eaglercraft Revolutionizing.** Tucker is Executive Director and has final say on direction, architecture and releases.
 
@@ -11,8 +13,8 @@ Mission: **Eaglercraft Revolutionizing.** Tucker is Executive Director and has f
 | --- | --- | --- |
 | Tucker | Executive Director / CEO, final decisions | Active |
 | Hark | Project Manager, second-in-command, primary developer, repo/build monitoring | Active. Synced. |
-| Claude | Secondary developer (limited usage: give it substantial, well-scoped tasks) | Connected via Tucker. Briefed. Read-only access to the repos here; returns work as reports/diffs for Hark to apply. Static review of PR #1 stereo math done (2026-11-20). |
-| ChatGPT | Backup / local + on-device developer, debugging, independent verification | Not connected yet |
+| Claude | Secondary developer (limited usage: give it substantial, well-scoped tasks) | Connected. GitHub linked (2026-11-21), works on its own branches. Briefed. Static review of PR #1 stereo math done (2026-11-20). |
+| ChatGPT | Backup / local + on-device developer, debugging, independent verification | Connected. GitHub linked (2026-11-21). Not yet briefed. |
 | Gemini | Research agent (research and recommendations, no implementation unless assigned) | Connected via API. Briefed. Free-tier quota: Pro models unavailable, Flash only, no web-search grounding yet. |
 
 ## Current state of EaglerXR (verified from the repo, not from hardware)
@@ -23,7 +25,8 @@ Nothing below has been tested on a headset. "Builds" means CI compiled it and pr
 - **Draft PR #1** `webxr-stereo-rendering` → main: in-tab stereo into `XRWebGLLayer` (level rendered per XR view, WebXR projection spliced with reversed-Z, eye atlas). WebGL2 renderer only.
 - **Draft PR #2** `webxr-controller-pointing` → #1: controller `targetRaySpace` pick ray; mine/place with the controller.
 - **Draft PR #3** `webxr-vr-controls-menus` → #2: Visor-style Touch controls (reimplemented, Visor is MPL-2.0, no code copied), snap turn, look-follows-head, floating VR GUI/HUD with laser cursor.
-- **Latest CI**: run #8 on `webxr-vr-controls-menus` (`a4e8dd0`) succeeded, artifact `eaglerxr-html` (~48 MB). Run #6 failed (javadoc terminator), fixed in #7.
+- **Draft PR #5** `webxr-quest-load-fix` → #3: Quest load fix (lazy/defensive VR startup, headset-safe Wasm compile, on-screen error overlay).
+- **Latest CI**: run #10 on `webxr-quest-load-fix` (`4fffd6b`) succeeded 2026-11-20; run #9 on the same branch also passed. Run #8 on `webxr-vr-controls-menus` (`a4e8dd0`) succeeded, artifact `eaglerxr-html` (~48 MB). Run #6 failed (javadoc terminator), fixed in #7.
 
 ## Incomplete features (from docs/WEBXR.md)
 
@@ -36,9 +39,9 @@ Nothing below has been tested on a headset. "Builds" means CI compiled it and pr
 
 ## Blockers
 
-1. **No hardware verification.** Needs Tucker (or ChatGPT on-device) to load the run #8 artifact in Quest Browser and report console logs. Checks listed in docs/WEBXR.md "Untested / known limitations".
-2. **Stacked draft PRs (#1 → #2 → #3)** await Tucker's review and merge decision.
-3. **ChatGPT** is not connected to the team yet.
+1. **No hardware verification.** Needs Tucker (or ChatGPT on-device) to load the run #10 artifact (PR #5) in Quest Browser and report console logs. Checks listed in docs/WEBXR.md "Untested / known limitations".
+2. **Stacked draft PRs (#1 → #2 → #3 → #5)** await Tucker's review and merge decision.
+3. **ChatGPT** is connected but still needs its HANDOFF.md-style brief.
 4. **Gemini quota**: free tier blocks Pro models and search grounding, so its sources must be checked before we act on them.
 
 ## Assigned tasks
@@ -47,7 +50,7 @@ Nothing below has been tested on a headset. "Builds" means CI compiled it and pr
 | --- | --- | --- |
 | First team sync + this status board | Hark | Done |
 | Sync report and top research topics | Gemini | Done (summary below) |
-| Quest hardware test of run #8 artifact | Tucker / ChatGPT | Open |
+| Quest hardware test of run #10 artifact (PR #5) | Tucker / ChatGPT | Open |
 | Decide Fabric strategy: build-time Mixin transform vs a lightweight browser mod API | Tucker | Open (decision needed) |
 
 ## Gemini sync report (2026-11-20, summary)
@@ -65,6 +68,6 @@ Gemini needs: Quest console logs, the class that drives the main rAF loop, and T
 
 ## Next steps
 
-1. Tucker: test run #8 on Quest; decide on PR #1–#3 and on the Fabric strategy.
+1. Tucker: test run #10 (PR #5) on Quest; decide on PRs #1–#3 and #5, and on the Fabric strategy.
 2. Hark: scope a branch to render eyes at the XR layer's resolution (fix the blur), once Tucker approves.
-3. Connect ChatGPT; hand it a HANDOFF.md-style brief. Claude is connected and has delivered a PR #1 review report.
+3. Brief ChatGPT with a HANDOFF.md-style brief. Claude is connected and has delivered a PR #1 review report.
