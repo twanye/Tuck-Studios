@@ -11,7 +11,7 @@ Mission: **Eaglercraft Revolutionizing.** Tucker is Executive Director and has f
 | --- | --- | --- |
 | Tucker | Executive Director / CEO, final decisions | Active |
 | Hark | Project Manager, second-in-command, primary developer, repo/build monitoring | Active. Synced. |
-| Claude | Secondary developer (limited usage: give it substantial, well-scoped tasks) | Not connected yet |
+| Claude | Secondary developer (limited usage: give it substantial, well-scoped tasks) | Connected via Tucker. Briefed. Read-only access to the repos here; returns work as reports/diffs for Hark to apply. Static review of PR #1 stereo math done (2026-11-20). |
 | ChatGPT | Backup / local + on-device developer, debugging, independent verification | Not connected yet |
 | Gemini | Research agent (research and recommendations, no implementation unless assigned) | Connected via API. Briefed. Free-tier quota: Pro models unavailable, Flash only, no web-search grounding yet. |
 
@@ -38,7 +38,7 @@ Nothing below has been tested on a headset. "Builds" means CI compiled it and pr
 
 1. **No hardware verification.** Needs Tucker (or ChatGPT on-device) to load the run #8 artifact in Quest Browser and report console logs. Checks listed in docs/WEBXR.md "Untested / known limitations".
 2. **Stacked draft PRs (#1 → #2 → #3)** await Tucker's review and merge decision.
-3. **Claude and ChatGPT** are not connected to the team yet.
+3. **ChatGPT** is not connected to the team yet.
 4. **Gemini quota**: free tier blocks Pro models and search grounding, so its sources must be checked before we act on them.
 
 ## Assigned tasks
@@ -67,4 +67,4 @@ Gemini needs: Quest console logs, the class that drives the main rAF loop, and T
 
 1. Tucker: test run #8 on Quest; decide on PR #1–#3 and on the Fabric strategy.
 2. Hark: scope a branch to render eyes at the XR layer's resolution (fix the blur), once Tucker approves.
-3. Connect Claude and ChatGPT; hand each a HANDOFF.md-style brief.
+3. Connect ChatGPT; hand it a HANDOFF.md-style brief. Claude is connected and has delivered a PR #1 review report.
