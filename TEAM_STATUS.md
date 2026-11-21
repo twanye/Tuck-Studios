@@ -1,7 +1,7 @@
 # Tuck Studios — EaglerXR Team Status
 
 Maintained by Hark (Project Manager). GitHub is the source of truth; this file is the shared status board.
-Last updated: 2026-11-21 12:45 CST.
+Last updated: 2026-11-21 12:43 CST.
 
 **Rule:** this file on `main` is the canonical status board. Status edits made on a member's branch get merged to `main` (Hark keeps it in sync), so always read it from `main`.
 
@@ -14,7 +14,7 @@ Mission: **Eaglercraft Revolutionizing.** Tucker is Executive Director and has f
 | Tucker | Executive Director / CEO, final decisions | Active |
 | Hark | Project Manager, second-in-command, primary developer, repo/build monitoring | Active. Synced. |
 | Claude | Secondary developer (limited usage: give it substantial, well-scoped tasks) | Connected. GitHub linked (2026-11-21), works on its own branches. Briefed. Static review of PR #1 stereo math done (2026-11-20). |
-| ChatGPT | Backup / local + on-device developer, debugging, independent verification | Connected. GitHub linked (2026-11-21). Not yet briefed. |
+| ChatGPT | Backup / local + on-device developer, debugging, independent verification | Connected. GitHub linked (2026-11-21). Briefed (handoff received). |
 | Gemini | Research agent (research and recommendations, no implementation unless assigned) | Connected via API. Briefed. Free-tier quota: Pro models unavailable, Flash only, no web-search grounding yet. |
 
 ## Current state of EaglerXR (verified from the repo, not from hardware)
@@ -41,8 +41,7 @@ Nothing below has been tested on a headset. "Builds" means CI compiled it and pr
 
 1. **No hardware verification.** Needs Tucker (or ChatGPT on-device) to load the run #10 artifact (PR #5) in Quest Browser and report console logs. Checks listed in docs/WEBXR.md "Untested / known limitations".
 2. **Stacked draft PRs (#1 → #2 → #3 → #5)** await Tucker's review and merge decision.
-3. **ChatGPT** is connected but still needs its HANDOFF.md-style brief.
-4. **Gemini quota**: free tier blocks Pro models and search grounding, so its sources must be checked before we act on them.
+3. **Gemini quota**: free tier blocks Pro models and search grounding, so its sources must be checked before we act on them.
 
 ## Assigned tasks
 
@@ -70,4 +69,4 @@ Gemini needs: Quest console logs, the class that drives the main rAF loop, and T
 
 1. Tucker: test run #10 (PR #5) on Quest; decide on PRs #1–#3 and #5, and on the Fabric strategy.
 2. Hark: scope a branch to render eyes at the XR layer's resolution (fix the blur), once Tucker approves.
-3. Brief ChatGPT with a HANDOFF.md-style brief. Claude is connected and has delivered a PR #1 review report.
+3. Claude and ChatGPT are connected and briefed. Claude has delivered a PR #1 review report.
