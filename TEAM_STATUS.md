@@ -1,7 +1,7 @@
 # Tuck Studios — EaglerXR Team Status
 
 Maintained by Hark (Project Manager). GitHub is the source of truth; this file is the shared status board.
-Last updated: 2026-11-23 15:10 CST.
+Last updated: 2026-11-23 15:30 CST.
 
 **Rule:** this file on `main` is the canonical status board. Status edits made on a member's branch get merged to `main` (Hark keeps it in sync), so always read it from `main`.
 
@@ -19,7 +19,7 @@ Mission: **Eaglercraft Revolutionizing.** Tucker is Executive Director and has f
 
 ## VisorQuest (new project, 2026-11-23)
 
-QuestCraft with Visor + VisorEssentials instead of Vivecraft, based on coah80's port. Repo: `twanye/VisorQuest` (private until finished). `main` = coah80/QCXR-XR-Wrapper; draft PRs #1 Visor, #2 Pojlib, #3 AtumVR import each component to its own branch. Targets: 1.20.1, 1.20.5, 1.20.6, 1.21.1, 1.21.5, 1.21.7, 1.21.11, all 26.x (1.20.7/1.20.8 on hold: not real releases). Nothing built or tested. Claude assigned: architecture doc + version matrix (`docs/HANDOFF.md` in that repo).
+QuestCraft with Visor + VisorEssentials instead of Vivecraft, based on coah80's port. Repo: `twanye/VisorQuest` (private until finished). `main` = coah80/QCXR-XR-Wrapper; draft PRs #1 Visor, #2 Pojlib, #3 AtumVR import each component to its own branch. Targets: 1.20.1, 1.20.5, 1.20.6, 1.21.1, 1.21.5, 1.21.7, 1.21.11, all 26.x (1.20.7/1.20.8 on hold: not real releases). Repo now public. Nothing built or tested. Claude and Codex (our ChatGPT-side dev) were usage-limited, so Hark wrote the architecture doc + version matrix: draft PR #4. Key points: Pojlib's JDK 22 already covers 1.20.5-1.21.11; 26.x needs Java 25 + LWJGL 3.4.x; 26.3 (SDL3) is highest risk; coah's Quest patches must be ported to Visor 0.6.1. Blockers: Pojlib native .so LFS objects missing, missing lwjgl-openxr-quest-3.3.3.jar, no Java 25 Android JRE.
 
 ## Current state of EaglerXR (verified from the repo, not from hardware)
 
