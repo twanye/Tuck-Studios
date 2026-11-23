@@ -1,7 +1,7 @@
 # Tuck Studios — EaglerXR Team Status
 
 Maintained by Hark (Project Manager). GitHub is the source of truth; this file is the shared status board.
-Last updated: 2026-11-21 15:25 CST.
+Last updated: 2026-11-23 15:10 CST.
 
 **Rule:** this file on `main` is the canonical status board. Status edits made on a member's branch get merged to `main` (Hark keeps it in sync), so always read it from `main`.
 
@@ -16,6 +16,10 @@ Mission: **Eaglercraft Revolutionizing.** Tucker is Executive Director and has f
 | Claude | Secondary developer (limited usage: give it substantial, well-scoped tasks) | Connected. GitHub linked (2026-11-21), works on its own branches. Briefed. Static review of PR #1 stereo math done (2026-11-20). |
 | ChatGPT | Backup / local + on-device developer, debugging, independent verification | Connected. GitHub linked (2026-11-21). Briefed (handoff received). |
 | Gemini | Research agent (research and recommendations, no implementation unless assigned) | Connected via API. Briefed. Free-tier quota: Pro models unavailable, Flash only, no web-search grounding yet. |
+
+## VisorQuest (new project, 2026-11-23)
+
+QuestCraft with Visor + VisorEssentials instead of Vivecraft, based on coah80's port. Repo: `twanye/VisorQuest` (private until finished). `main` = coah80/QCXR-XR-Wrapper; draft PRs #1 Visor, #2 Pojlib, #3 AtumVR import each component to its own branch. Targets: 1.20.1, 1.20.5, 1.20.6, 1.21.1, 1.21.5, 1.21.7, 1.21.11, all 26.x (1.20.7/1.20.8 on hold: not real releases). Nothing built or tested. Claude assigned: architecture doc + version matrix (`docs/HANDOFF.md` in that repo).
 
 ## Current state of EaglerXR (verified from the repo, not from hardware)
 
