@@ -15,7 +15,7 @@ Mission: **Eaglercraft Revolutionizing.** Tucker is Executive Director and has f
 | Hark | Project Manager / coordinator only (no coding, as of 2026-11-21): assigns tasks, reviews, repo/build monitoring, keeps this board | Active. Synced. |
 | Claude | Secondary developer (limited usage: give it substantial, well-scoped tasks) | Connected. GitHub linked (2026-11-21), works on its own branches. Briefed. Static review of PR #1 stereo math done (2026-11-20). |
 | ChatGPT | Backup / local + on-device developer, debugging, independent verification | Connected. GitHub linked (2026-11-21). Briefed (handoff received). |
-| Gemini | Research agent (research and recommendations, no implementation unless assigned) | Connected via API. Briefed. Free-tier quota: Pro models unavailable, Flash only, no web-search grounding yet. |
+| Gemini | Research & Legal (research, recommendations, and license/attribution checks on code we reuse; no implementation unless assigned; not real legal advice) | Connected via API. Briefed. Free-tier quota: Pro models unavailable, Flash only, no web-search grounding yet. |
 
 ## VisorQuest (new project, 2026-11-23)
 
